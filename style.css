@@ -94,17 +94,18 @@ body {
 }
 
 .insta-link {
+	border: solid 2px #2b1c04;
 	margin: 2vw;
 	overflow: hidden;
 	display: inline-block;
+	-webkit-box-shadow: 0 15px 20px 3px grey;
+	        box-shadow: 0 15px 20px 3px grey;
 }
 
 .insta-link img {
 	display: block;
 	transition: transform .5s;
 	width: 22vw;
-	-webkit-box-shadow: 0 15px 20px 3px grey;
-	        box-shadow: 0 15px 20px 3px grey;
 }
 
 .insta-link img:hover{
