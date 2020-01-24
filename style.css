@@ -87,20 +87,29 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
 
 .insta-link {
+	margin: 2vw;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.insta-link img {
+	display: block;
+	transition: transform .5s;
 	width: 22vw;
-	margin: 3vw;
 	-webkit-box-shadow: 0 15px 20px 3px grey;
 	        box-shadow: 0 15px 20px 3px grey;
 }
 
-img {
-	width: 22vw;
+.insta-link img:hover{
+	transform: scale(1.2);
+  	transform-origin: 50% 50%;
 }
 
 .contact {
