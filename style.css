@@ -5,7 +5,6 @@ body {
 .top-banner {
 	background-color: #fdf6e0;
 	padding: 0 8vw;
-	height: 150px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -17,11 +16,12 @@ body {
 }
 
 .top-logo {
-	margin: 0 auto;
+	margin: 25px auto;
 	width: 500px;
 }
 
 .button {
+	margin: 5px 0;
 	border: none;
 	color: #2b1c04;
 	text-align: center;
@@ -43,10 +43,10 @@ body {
 }
 
 .jumbotron {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url(assets/carousel1.jpg);
 	background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(assets/carousel1.jpg);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2))), url(assets/carousel1.jpg);
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(assets/carousel1.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 75vh;
 }
@@ -87,7 +87,8 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -95,7 +96,7 @@ body {
 
 .insta-link {
 	border: solid 2px #2b1c04;
-	margin: 2vw;
+	margin: 30px;
 	overflow: hidden;
 	display: inline-block;
 	-webkit-box-shadow: 0 15px 20px 3px grey;
@@ -104,13 +105,21 @@ body {
 
 .insta-link img {
 	display: block;
+	-webkit-transition: -webkit-transform .5s;
+	transition: -webkit-transform .5s;
+	-o-transition: transform .5s;
 	transition: transform .5s;
-	width: 22vw;
+	transition: transform .5s, -webkit-transform .5s;
+	width: 300px;
 }
 
 .insta-link img:hover{
-	transform: scale(1.2);
-  	transform-origin: 50% 50%;
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+  	-webkit-transform-origin: 50% 50%;
+  	    -ms-transform-origin: 50% 50%;
+  	        transform-origin: 50% 50%;
 }
 
 .contact {
@@ -175,4 +184,36 @@ body {
 
 .author {
 	color: #fdf6e0;
+}
+
+@media screen and (max-width: 1150px) {
+	.top-banner {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+	}
+	.top-logo {
+		margin: 25px auto 10px auto;
+		-webkit-box-ordinal-group: 1;
+		    -ms-flex-order: 0;
+		        order: 0;
+	}
+	.button {
+		margin: 0 0 15px 0;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+	}
+	.gallery {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
 }
