@@ -222,6 +222,12 @@ body {
 			    -ms-flex-order: 1;
 			        order: 1;
 		}
+		.jumbotron {
+			height: 50vh;
+		}
+		.info-description {
+			width: 80vw;
+		}
 		.gallery {
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: normal;
@@ -234,10 +240,13 @@ body {
 		.insta-link img {
 			width: 80vw;
 		}
-		p, i {
+		.info-heading, .contact-heading, i {
 			font-size: 200%;
 		}
+		.heading-small {
+			font-size: 82%;
+		}
 		i {
-			padding: 0 20px;
+			padding: 10px 20px;
 		}
 }
