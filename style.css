@@ -3,7 +3,7 @@ body {
 }
 
 .top-banner {
-	background-color: #fdf6e0;
+	background-color: #1d2e59;
 	padding: 0 8vw;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -23,7 +23,7 @@ body {
 .button {
 	margin: 5px 0;
 	border: none;
-	color: #2b1c04;
+	color: white;
 	text-align: center;
 	text-decoration: none;
 	letter-spacing: 0.5px;
@@ -35,7 +35,7 @@ body {
 
 .button:hover{
 	text-decoration: none;
-	color: #2b1c04;
+	color: white;
 }
 
 #landing {
@@ -52,7 +52,7 @@ body {
 }
 
 .jumbo-info {
-	color: #fdf6e0;
+	color: white;
 	font-family: goudy-old-style, serif;
 	font-weight: 700;
 	font-style: normal;
@@ -66,7 +66,8 @@ body {
 }
 
 .info {
-	background-color: #fdf6e0;
+	color: #F0F4FF;
+	background-color: #1d2e59;
 	padding-bottom: 50px;
 	font-family: goudy-old-style, serif;
 }
@@ -83,6 +84,12 @@ body {
 	width: 50%;
 }
 
+.divider {
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
 .gallery {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -95,12 +102,12 @@ body {
 }
 
 .insta-link {
-	border: solid 2px #2b1c04;
+	border: solid 2px #142048;
 	margin: 30px;
 	overflow: hidden;
 	display: inline-block;
-	-webkit-box-shadow: 0 15px 20px 3px grey;
-	        box-shadow: 0 15px 20px 3px grey;
+	-webkit-box-shadow: 0 15px 20px 3px #142048;
+	        box-shadow: 0 15px 20px 3px #142048;
 }
 
 .insta-link img {
@@ -124,8 +131,8 @@ body {
 
 .contact {
 	padding: 15px 0;
-	color: #fdf6e0;
-	background-color: #2b1c04;
+	color: white;
+	background-color: #142048;
 	font-size: 28px;
 	font-family: goudy-old-style, serif;
 	letter-spacing: 2px;
@@ -166,7 +173,7 @@ body {
 }
 
 .fab, a[href^="mailto:"] {
-	color: #fdf6e0;
+	color: white;
 	margin: 0 5px;
 }
 
@@ -176,7 +183,7 @@ body {
 }
 
 .author {
-	color: #fdf6e0;
+	color: white;
 }
 
 @media screen 
