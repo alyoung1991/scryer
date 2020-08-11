@@ -56,9 +56,10 @@ body {
 	font-family: goudy-old-style, serif;
 	font-weight: 700;
 	font-style: normal;
-	text-align: right;
-	font-size: 100px;
+	font-size: 75px;
 	letter-spacing: 2px;
+	display: flex;
+	justify-content: center;
 }
 
 .heading-small {
@@ -88,6 +89,10 @@ body {
 	padding-top: 50px;
 	display: flex;
 	justify-content: center;
+}
+
+.divider img {
+	width: 35%;
 }
 
 .gallery {
@@ -184,6 +189,44 @@ body {
 
 .author {
 	color: white;
+}
+
+.contact-container {
+	font-family: goudy-old-style, serif;
+	color: white;
+	padding-top: 40px;
+	background-color: #1d2e59;
+	display: flex;
+
+}
+
+.contact-info {
+	width: 39%;
+	padding-left: 70px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.contact-body {
+	font-size: 60%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.contact-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#map {
+	width: 62%;
+	height: 680px;
 }
 
 @media screen 
