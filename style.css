@@ -55,6 +55,22 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 75vh;
+	z-index: 1;
+}
+
+#video-container {
+    top:0%;
+    left:0%;
+    height:75vh;
+    width:100%;
+    overflow: hidden;
+}
+video {
+	background-color: black;
+	height: 100%;
+    position:absolute;
+    z-index:-1;
+        width: 100%;
 }
 
 .jumbo-info {
