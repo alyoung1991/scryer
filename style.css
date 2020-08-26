@@ -59,18 +59,23 @@ body {
 }
 
 #video-container {
-    top:0%;
-    left:0%;
-    height:75vh;
-    width:100%;
-    overflow: hidden;
+	display: inline-block;
+    top: 0%;
+    left: 0%;
+    height: 75vh;
+    width: 100%;
+    overflow: auto;
 }
+
+.video{
+	height: 100%;
+}
+
 video {
 	background-color: black;
-	height: 100%;
-    position:absolute;
-    z-index:-1;
-        width: 100%;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
 }
 
 .jumbo-info {
