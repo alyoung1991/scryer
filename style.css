@@ -233,7 +233,6 @@ video {
 	padding-top: 40px;
 	background-color: #1d2e59;
 	display: flex;
-
 }
 
 .contact-info {
@@ -284,6 +283,18 @@ video {
 			flex-direction: column;
 			order: 1;
 		}
+		.contact-container {
+			flex-direction: column;
+			align-items: center;
+		}
+		.contact-info {
+			width: 100%;
+			padding-left: 0;
+			align-items: center;
+		}
+		#map {
+			width: 100%;
+		}
 }
 
 @media screen 
@@ -326,7 +337,7 @@ video {
 			width: 80vw;
 		}
 		.info-heading, .contact-heading, i {
-			font-size: 200%;
+			font-size: 250%;
 		}
 		.heading-small {
 			font-size: 82%;
