@@ -2,6 +2,11 @@ body {
 	margin: 0;
 }
 
+.modal-content {
+	text-align: center;
+	font-family: goudy-old-style, serif;
+}
+
 .navigation {
 	background-color: #1d2e59;
 	padding: 0 8vw;
@@ -187,7 +192,7 @@ video {
 	margin: 0;
 }
 
-.zoom {
+/*.zoom {
 	-webkit-transition: -webkit-transform .4s;
 	transition: -webkit-transform .4s;
 	-o-transition: transform .4s;
@@ -202,7 +207,7 @@ video {
     -webkit-transform: scale(1.5);
         -ms-transform: scale(1.5);
             transform: scale(1.5);
-}
+}*/
 
 .fab, a[href^="mailto:"] {
 	color: white;
@@ -216,6 +221,10 @@ video {
 
 .author {
 	color: white;
+}
+
+.product {
+	margin: 0 auto;
 }
 
 .contact-container {

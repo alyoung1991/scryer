@@ -11,11 +11,11 @@
 	<body>
 		<div class="navigation">
 				<div class="left">
-					<a href="index.html" class="button">H<span class="heading-small">OME</span></a>
+					<a href="home.html" class="button">H<span class="heading-small">OME</span></a>
 					<a href="about.html" class="button">A<span class="heading-small">BOUT</span></a>
 				</div>
 				<div class="center">
-					<a href="index.html"><img class="top-logo" src="assets/logo.png"></a>
+					<a href="home.html"><img class="top-logo" src="assets/logo.png"></a>
 				</div>
 				<div class="right">
 					<a href="#" class="button">P<span class="heading-small">RODUCTS</span></a>
@@ -23,148 +23,10 @@
 				</div>
 		</div>
 
-		<div id="landing" class="jumbotron jumbotron-fluid">
-			<div class="container jumbo-info">
-		    	<p class="jumbo-heading">P<span class="heading-small">RODUCTS</span></p>
-		  	</div>
-		</div>
-
 		<div class="info">
 			<p class="info-heading">P<span class="heading-small">RODUCTS</span></p>
-			<div id='product-component-1595712253042'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'scryerrumtest.myshopify.com',
-      storefrontAccessToken: 'fb7e78a7e93e0b55dfbc2277b68004b6',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '5538970894490',
-        node: document.getElementById('product-component-1595712253042'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#3a89ae"
-        },
-        "background-color": "#4098c1",
-        ":focus": {
-          "background-color": "#3a89ae"
-        },
-        "border-radius": "13px"
-      }
-    },
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#3a89ae"
-        },
-        "background-color": "#4098c1",
-        ":focus": {
-          "background-color": "#3a89ae"
-        },
-        "border-radius": "13px"
-      }
-    },
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "cart": {
-    "styles": {
-      "button": {
-        ":hover": {
-          "background-color": "#3a89ae"
-        },
-        "background-color": "#4098c1",
-        ":focus": {
-          "background-color": "#3a89ae"
-        },
-        "border-radius": "13px"
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "button": "Checkout"
-    }
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "background-color": "#4098c1",
-        ":hover": {
-          "background-color": "#3a89ae"
-        },
-        ":focus": {
-          "background-color": "#3a89ae"
-        }
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-			<div id='collection-component-1595655279771'></div>
+
+			<div class="product" id='product-component-1598623439182'></div>
 			<script type="text/javascript">
 			/*<![CDATA[*/
 			(function () {
@@ -187,13 +49,14 @@
 			  }
 			  function ShopifyBuyInit() {
 			    var client = ShopifyBuy.buildClient({
-			      domain: 'scryerrumtest.myshopify.com',
-			      storefrontAccessToken: 'fb7e78a7e93e0b55dfbc2277b68004b6',
+			      domain: 'scryertest.myshopify.com',
+			      storefrontAccessToken: '7acb7866194a4f7a0535ae6062b45c59',
 			    });
 			    ShopifyBuy.UI.onReady(client).then(function (ui) {
-			      ui.createComponent('collection', {
-			        id: '208829251738',
-			        node: document.getElementById('collection-component-1595655279771'),
+			      ui.createComponent('product', {
+			        id: '5577856712863',
+			          variantId: '35910376128671',
+			        node: document.getElementById('product-component-1598623439182'),
 			        moneyFormat: '%24%7B%7Bamount%7D%7D',
 			        options: {
 					  "product": {
@@ -202,38 +65,29 @@
 					        "@media (min-width: 601px)": {
 					          "max-width": "calc(25% - 20px)",
 					          "margin-left": "20px",
-					          "margin-bottom": "50px",
-					          "width": "calc(25% - 20px)"
-					        },
-					        "img": {
-					          "height": "calc(100% - 15px)",
-					          "position": "absolute",
-					          "left": "0",
-					          "right": "0",
-					          "top": "0"
-					        },
-					        "imgWrapper": {
-					          "padding-top": "calc(75% + 15px)",
-					          "position": "relative",
-					          "height": "0"
+					          "margin-bottom": "50px"
 					        }
 					      },
-					      "button": {
-					        ":hover": {
-					          "background-color": "#3a89ae"
-					        },
-					        "background-color": "#4098c1",
-					        ":focus": {
-					          "background-color": "#3a89ae"
-					        },
-					        "border-radius": "13px",
-					        "padding-left": "37px",
-					        "padding-right": "37px"
+					      "title": {
+					        "color": "#ffffff"
+					      },
+					      "price": {
+					        "color": "#ffffff"
+					      },
+					      "compareAt": {
+					        "color": "#ffffff"
+					      },
+					      "unitPrice": {
+					        "color": "#ffffff"
 					      }
+					    },
+					    "contents": {
+					      "options": false
 					    },
 					    "text": {
 					      "button": "Add to cart"
-					    }
+					    },
+					    "variantId": "35910376128671"
 					  },
 					  "productSet": {
 					    "styles": {
@@ -258,18 +112,6 @@
 					          "margin-left": "0px",
 					          "margin-bottom": "0px"
 					        }
-					      },
-					      "button": {
-					        ":hover": {
-					          "background-color": "#3a89ae"
-					        },
-					        "background-color": "#4098c1",
-					        ":focus": {
-					          "background-color": "#3a89ae"
-					        },
-					        "border-radius": "13px",
-					        "padding-left": "37px",
-					        "padding-right": "37px"
 					      }
 					    },
 					    "text": {
@@ -277,43 +119,31 @@
 					    }
 					  },
 					  "cart": {
-					    "styles": {
-					      "button": {
-					        ":hover": {
-					          "background-color": "#3a89ae"
-					        },
-					        "background-color": "#4098c1",
-					        ":focus": {
-					          "background-color": "#3a89ae"
-					        },
-					        "border-radius": "13px"
-					      }
-					    },
 					    "text": {
 					      "total": "Subtotal",
 					      "button": "Checkout"
-					    }
-					  },
-					  "toggle": {
-					    "styles": {
-					      "toggle": {
-					        "background-color": "#4098c1",
-					        ":hover": {
-					          "background-color": "#3a89ae"
-					        },
-					        ":focus": {
-					          "background-color": "#3a89ae"
-					        }
-					      }
+					    },
+					    "contents": {
+					      "note": true
 					    }
 					  }
-					}
+					},
 			      });
 			    });
 			  }
 			})();
 			/*]]>*/
 			</script>
+		</div>
+
+		<div class="contact">
+			<p class="contact-heading">C<span class="heading-small">ONTACT</span></p>
+			<div class="social">
+				<a href="https://www.facebook.com/Scryer.Rum/" target="_blank"><i class="fab fa-facebook-square zoom"></i></a>
+				<a href="https://www.instagram.com/scryer.rum/" target="_blank"><i class="fab fa-instagram zoom"></i></a>
+				<a href="mailto:gdr909@gmail.com" target="_blank"><i class="fas fa-envelope zoom"></i></a>
+			</div>
+			<p class="credit">Website by: <a class="author" href="https://alyoung1991.github.io/" target="_blank">Alberto Young</a></p>
 		</div>
 
 	</body>
