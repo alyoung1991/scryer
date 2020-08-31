@@ -220,6 +220,7 @@ video {
 	background-color: #1d2e59;
 	padding-bottom: 50px;
 	font-family: goudy-old-style, serif;
+	overflow: auto;
 }
 
 .info-heading {
@@ -245,7 +246,7 @@ video {
 }
 
 .divider img {
-	width: 35%;
+	width: 35vw;
 }
 
 .gallery {
