@@ -25,21 +25,22 @@ function addCart() {
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
 	  ui.createCart({
-	  	id: '5563396128928',
-        node: document.getElementById('product-component-1598645230031'),
+        id: '5563396128928',
+        node: document.getElementById('product-component-1598887629425'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
 		  "product": {
 		    "styles": {
 		      "product": {
 		        "@media (min-width: 601px)": {
-		          "max-width": "calc(25% - 20px)",
-		          "margin-left": "20px",
+		          "max-width": "100%",
+		          "margin-left": "0",
 		          "margin-bottom": "50px"
-		        }
+		        },
+		        "text-align": "left"
 		      },
 		      "title": {
-		        "font-size": "19px",
+		        "font-size": "26px",
 		        "color": "#ffffff"
 		      },
 		      "button": {
@@ -58,18 +59,28 @@ function addCart() {
 		        "padding-bottom": "16px"
 		      },
 		      "price": {
-		        "font-size": "17px",
+		        "font-size": "18px",
 		        "color": "#ffffff"
 		      },
 		      "compareAt": {
-		        "font-size": "14.45px",
+		        "font-size": "15.299999999999999px",
 		        "color": "#ffffff"
 		      },
 		      "unitPrice": {
-		        "font-size": "14.45px",
+		        "font-size": "15.299999999999999px",
+		        "color": "#ffffff"
+		      },
+		      "description": {
 		        "color": "#ffffff"
 		      }
 		    },
+		    "layout": "horizontal",
+		    "contents": {
+		      "img": false,
+		      "imgWithCarousel": true,
+		      "description": true
+		    },
+		    "width": "100%",
 		    "text": {
 		      "button": "Add to cart"
 		    },
@@ -160,7 +171,7 @@ function addCart() {
 		    ]
 		  }
 		},
-	  })
+      })
 	});
   }
 }

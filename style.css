@@ -8,26 +8,55 @@ body {
 }
 
 .shake {
-	animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
+	-webkit-animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+	        animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+	-webkit-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+@-webkit-keyframes shake {
+	10%, 90% {
+		-webkit-transform: translate3d(-1px, 0, 0);
+		        transform: translate3d(-1px, 0, 0);
+	}
+
+	20%, 80% {
+		-webkit-transform: translate3d(2px, 0, 0);
+		        transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		-webkit-transform: translate3d(-4px, 0, 0);
+		        transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {
+		-webkit-transform: translate3d(4px, 0, 0);
+		        transform: translate3d(4px, 0, 0);
+	}
 }
 
 @keyframes shake {
 	10%, 90% {
-		transform: translate3d(-1px, 0, 0);
+		-webkit-transform: translate3d(-1px, 0, 0);
+		        transform: translate3d(-1px, 0, 0);
 	}
 
 	20%, 80% {
-		transform: translate3d(2px, 0, 0);
+		-webkit-transform: translate3d(2px, 0, 0);
+		        transform: translate3d(2px, 0, 0);
 	}
 
 	30%, 50%, 70% {
-		transform: translate3d(-4px, 0, 0);
+		-webkit-transform: translate3d(-4px, 0, 0);
+		        transform: translate3d(-4px, 0, 0);
 	}
 
 	40%, 60% {
-		transform: translate3d(4px, 0, 0);
+		-webkit-transform: translate3d(4px, 0, 0);
+		        transform: translate3d(4px, 0, 0);
 	}
 }
 
@@ -46,8 +75,12 @@ body {
 
 .left, .right{
 	width: 20vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .top-logo {
@@ -73,8 +106,64 @@ body {
 	color: white;
 }
 
-#landing {
-	margin-bottom: 0;
+.landing{
+	height: 65vh;
+}
+
+.tourBtn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-animation: 2s ease 1 forwards slide;
+	        animation: 2s ease 1 forwards slide;
+	margin-right: 110px; 
+}
+
+.landing-message {
+	font-size: 64px;
+	-webkit-animation: 2s ease 1 forwards slide;
+	        animation: 2s ease 1 forwards slide;
+	text-align: center;
+	margin-right: 110px; 
+}
+
+@-webkit-keyframes slide {
+	0%{
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+		opacity: 0;
+	}
+	50%{
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: translateX(55px);
+		        transform: translateX(55px);
+		opacity: 1;
+	}
+}
+
+@keyframes slide {
+	0%{
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+		opacity: 0;
+	}
+	50%{
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: translateX(55px);
+		        transform: translateX(55px);
+		opacity: 1;
+	}
 }
 
 .jumbotron {
@@ -114,8 +203,12 @@ video {
 	font-style: normal;
 	font-size: 75px;
 	letter-spacing: 2px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .heading-small {
@@ -143,8 +236,12 @@ video {
 
 .divider {
 	padding-top: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .divider img {
@@ -230,6 +327,16 @@ video {
 	color: white;
 }
 
+.products {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
 .product {
 	margin: 0 auto;
 }
@@ -239,31 +346,58 @@ video {
 	color: white;
 	padding-top: 40px;
 	background-color: #1d2e59;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .contact-info {
 	width: 39%;
 	padding-left: 70px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .contact-body {
 	font-size: 60%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 }
 
 .contact-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #map {
@@ -284,20 +418,35 @@ video {
 		}
 		.center {
 			margin: 25px auto 10px auto;
-			order: -1;
+			-webkit-box-ordinal-group: 0;
+			    -ms-flex-order: -1;
+			        order: -1;
 		}
 		.left, .right {
-			flex-direction: column;
-			order: 1;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			-webkit-box-ordinal-group: 2;
+			    -ms-flex-order: 1;
+			        order: 1;
 		}
 		.contact-container {
-			flex-direction: column;
-			align-items: center;
+			height: 70vh;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 		}
 		.contact-info {
 			width: 100%;
 			padding: 0;
-			align-items: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 		}
 		#map {
 			width: 100%;
@@ -319,11 +468,18 @@ video {
 		}
 		.center {
 			margin: 25px auto 10px auto;
-			order: -1;
+			-webkit-box-ordinal-group: 0;
+			    -ms-flex-order: -1;
+			        order: -1;
 		}
 		.left, .right {
-			flex-direction: column;
-			order: 1;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			-webkit-box-ordinal-group: 2;
+			    -ms-flex-order: 1;
+			        order: 1;
 		}
 		.jumbotron {
 			height: 50vh;
