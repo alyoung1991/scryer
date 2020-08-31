@@ -340,6 +340,7 @@ video {
 
 .product {
 	margin: 0 auto;
+	height: auto;
 }
 
 .contact-container {
