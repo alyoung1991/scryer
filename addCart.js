@@ -26,7 +26,7 @@ function addCart() {
     ShopifyBuy.UI.onReady(client).then(function (ui) {
 	  ui.createCart({
         id: '5563396128928',
-        node: document.getElementById('product-component-1598887629425'),
+        node: document.getElementById('collection-component-1602094249231'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
 		  "product": {
@@ -141,6 +141,13 @@ function addCart() {
 		        "font-size": "16px",
 		        "padding-top": "16px",
 		        "padding-bottom": "16px",
+		        ":hover": {
+		          "background-color": "#22367a"
+		        },
+		        "background-color": "#142048",
+		        ":focus": {
+		          "background-color": "#22367a"
+		        },
 		        "border-radius": "13px"
 		      }
 		    },
